@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+
+    int n = 999;
+    int data[n] = {....};
+    int cari = 999;
+    bool ketemu = false;
+    int i;
+
+    // algoritma Sequential Search
+    for (i = 0; i < n; i++){
+        if(data[i] == cari){
+            ketemu = true;
+            break;
+        }
+    }
+
+    if (ketemu){
+        cout << cari << " ditemukan pada indeks ke-" << i << endl;
+    } else {
+        cout << cari << " tidak dapat ditemukan pada data." << endl;
+    }
+    
+    return 0;
+}

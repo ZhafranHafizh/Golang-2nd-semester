@@ -1,0 +1,24 @@
+procedure binarysearch (var ar as array, var key)
+    integer low = 0, up = length(ar)-1, med
+    boolean status = false
+    while (low <= up) do
+        med =  (low + up) / 2
+        if (ar[med] == key)
+            print(key+"is present at position" + med)
+            status = true
+            break
+        else 
+            if (key > ar[med])
+                low = med + 1
+            else
+                up = med - 1
+            endif
+        endif
+    endwhile
+    if(flag == false)
+        print(key + "is not present in the list")
+    end if
+endprocedure
+
+# perbedaan antara acending dan decending hanyalah pengurutannya jika acending menggunakan cara 
+sementara decending di uturkan dari yang terbesar hingga yang terkecil.

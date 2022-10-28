@@ -1,0 +1,15 @@
+program Penghitunghurufvokal
+kamus
+    pita : string; vokal : integer; CC : char; EOP : boolean
+Algoritma
+    input(pita)
+    vokal <- 0
+    start()
+    while not EOP do
+        if (CC=='a') or (CC=='e') or (CC=='i') or (CC=='o') or (CC=='u') then
+            vokal <- vokal + 1
+        endif
+        ADV()
+    endwhile
+    output("Jumlah huruf vokal adalah", vokal)
+endprogram
